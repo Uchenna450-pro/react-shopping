@@ -13,12 +13,14 @@ const Products = () => {
     };
     const productType = getQueryParams("product_type") || "phones"; // set the default type to phones
     const [width, setWidth] = useState(document.body.clientWidth);
+    setWidth(document.body.clientWidth);
     const product = () => {
         switch (productType) {
             case "phones": break; //define later     
             default: break;
         }
     };
+    product();
     return (
         <div className="ProductsPage">
             <Nav />
