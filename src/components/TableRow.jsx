@@ -17,7 +17,7 @@ const TableRow = ({ id, img, text, quantity, price, total, setSampleData }) => {
     };
     return (
         <div className="TableRow">
-            <img src={img} alt="Table Image" />
+            <img src={img} alt="" />
             <span>{text}</span>
             <span>${price}</span>
             <p>
