@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 const Rating = ({ rating }) => {
     const fullStars = Math.floor(rating);
