@@ -12,6 +12,6 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
   "framework": "create-react-app"
 }
