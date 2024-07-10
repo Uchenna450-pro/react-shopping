@@ -1,0 +1,154 @@
+.CheckOut .Hero {
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ddd;
+}
+.CheckOut main .title {
+  font-size: 14px;
+  color: #555;
+}
+.CheckOut main .flex-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.CheckOut main .flex-header h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.CheckOut main .flex-header .flex-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+}
+.CheckOut main .flex-header .flex-btn a {
+  text-decoration: none;
+  color: #555;
+}
+.CheckOut main .flex-header .flex-btn > a, .CheckOut main .flex-header .flex-btn > div {
+  background: #eee;
+  padding: 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.CheckOut main .flex-header .flex-btn .cart span {
+  background-color: #ff3b30;
+  color: #fff;
+  padding: 0.001rem 0.2rem;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 11px;
+  transform: translate(-60%, -20%);
+}
+.CheckOut main form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px 40px;
+}
+.CheckOut main form .input-field {
+  margin: 0.5rem 0;
+}
+.CheckOut main form .input-field .input-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.CheckOut main form .input-field input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  height: 34px;
+  width: 100%;
+  font-family: "Poppins", verdana;
+  outline: 0;
+  background: #dfdede;
+  padding: 0.5rem;
+}
+.CheckOut main form .input-field select {
+  border: 1px solid #ccc;
+  font-family: "Poppins", verdana;
+  background: #dfdede;
+  width: 100%;
+  color: #555;
+  outline: 0;
+  padding: 0.4rem;
+}
+.CheckOut main form .input-field textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ccc;
+  color: #555;
+  background: #dfdede;
+  font-family: "Poppins", verdana;
+  outline: 0;
+  padding: 0.4rem;
+}
+.CheckOut main form .input-field:last-child {
+  grid-column: span 2;
+  width: 100%;
+  resize: vertical;
+}
+@media screen and (max-width: 500px) {
+  .CheckOut main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .CheckOut main form .input-field {
+    width: 100%;
+  }
+}
+.CheckOut main .line {
+  height: 2px;
+  background: #bbb;
+  width: calc(100% - 5rem);
+  border-radius: 25px;
+  margin-top: 0.5rem;
+}
+.CheckOut main .CartTotal {
+  width: 350px;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+}
+.CheckOut main .CartTotal > h2 {
+  font-weight: 500;
+  text-align: center;
+}
+.CheckOut main .CartTotal .flex-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.CheckOut main .CartTotal .line {
+  width: 100%;
+  transform: translate(0);
+  margin: 1rem 0;
+}
+.CheckOut main .CartTotal .large-btn {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background: #9a28df;
+  color: #fff;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border-radius: 7px;
+  transition: 0.3s linear;
+}
+.CheckOut main .CartTotal .large-btn:hover {
+  background: #ae53e7;
+}
+@media screen and (max-width: 370px) {
+  .CheckOut main .CartTotal {
+    width: 100%;
+  }
+}/*# sourceMappingURL=CheckOut.css.map */

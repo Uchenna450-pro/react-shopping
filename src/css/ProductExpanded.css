@@ -1,0 +1,155 @@
+.ProductExpanded .Hero {
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ddd;
+}
+.ProductExpanded main .title {
+  font-size: 14px;
+  color: #555;
+}
+.ProductExpanded main .flex-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProductExpanded main .flex-header h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.ProductExpanded main .flex-header .flex-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+}
+.ProductExpanded main .flex-header .flex-btn a {
+  text-decoration: none;
+  color: #555;
+}
+.ProductExpanded main .flex-header .flex-btn > a, .ProductExpanded main .flex-header .flex-btn > div {
+  background: #eee;
+  padding: 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.ProductExpanded main .flex-header .flex-btn .cart span {
+  background-color: #ff3b30;
+  color: #fff;
+  padding: 0.001rem 0.2rem;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 11px;
+  transform: translate(-60%, -20%);
+}
+.ProductExpanded main .line {
+  height: 2px;
+  background: #BBB;
+  width: calc(100% - 5rem);
+  border-radius: 25px;
+  margin-top: 0.5rem;
+}
+.ProductExpanded main .TableHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 1rem;
+  width: 100%;
+}
+.ProductExpanded main .TableHeader .item {
+  font-weight: 500;
+  font-size: 18px;
+  width: 16.66%;
+}
+.ProductExpanded main .TableRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.ProductExpanded main .TableRow > img, .ProductExpanded main .TableRow > span, .ProductExpanded main .TableRow > p, .ProductExpanded main .TableRow > div {
+  font-size: 13px;
+  align-self: center;
+}
+.ProductExpanded main .TableRow > img {
+  width: 50%;
+}
+.ProductExpanded main .TableRow p {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ProductExpanded main .TableRow p span {
+  border: 1px solid #CACACA;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  color: #727272;
+}
+.ProductExpanded main .TableRow p span:hover {
+  background: #727272;
+  color: #CACACA;
+}
+.ProductExpanded main .TableRow i {
+  padding: 0.4rem;
+  border-radius: 8px;
+  border: 1px solid #FF3B30;
+  color: #FF3B30;
+  cursor: pointer;
+  font-size: 16px;
+}
+.ProductExpanded main .trap-table {
+  width: 100%;
+  overflow-x: scroll;
+}
+@media screen and (max-width: 970px) {
+  .ProductExpanded main .TableHeader .item {
+    font-size: 15px;
+  }
+  .ProductExpanded main .table {
+    width: 600px;
+  }
+}
+.ProductExpanded main .CartTotal {
+  width: 350px;
+  background: #FFF;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+}
+.ProductExpanded main .CartTotal > h2 {
+  font-weight: 500;
+  text-align: center;
+}
+.ProductExpanded main .CartTotal .flex-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProductExpanded main .CartTotal .line {
+  width: 100%;
+  transform: translate(0);
+  margin: 1rem 0;
+}
+.ProductExpanded main .CartTotal .large-btn {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background: #9a28df;
+  color: #FFF;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border-radius: 7px;
+  transition: 0.3s linear;
+}
+.ProductExpanded main .CartTotal .large-btn:hover {
+  background: #ae53e7;
+}
+@media screen and (max-width: 370px) {
+  .ProductExpanded main .CartTotal {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ProductExpanded.css.map */

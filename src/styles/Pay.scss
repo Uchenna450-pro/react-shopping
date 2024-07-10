@@ -1,0 +1,59 @@
+@import "./presets";
+
+.CheckOutPay {
+  main {
+    margin-top: 1rem;
+    .line {
+      height: 2px;
+      background: #bbb;
+      width: calc(100% - 5rem);
+      border-radius: 25px;
+      margin-top: 0.5rem;
+    }
+    .CartTotal {
+      width: 400px;
+      background: #fff;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      margin: 2rem auto;
+      & > h2 {
+        font-weight: 500;
+        text-align: center;
+      }
+      .flex-display {
+        @include flex(row, center, space-between);
+      }
+      .line {
+        width: 100%;
+        transform: translate(0);
+        margin: 1rem 0;
+      }
+      .large-btn {
+        border: 0;
+        outline: 0;
+        width: 100%;
+        background: #9a28df;
+        color: #fff;
+        padding: 0.7rem;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        border-radius: 7px;
+        transition: 0.3s linear;
+        &:hover {
+          background: #ae53e7;
+        }
+      }
+      @include media(450px) {
+        width: 100%;
+      }
+    }
+    .validate-warn {
+        color: #FF9500;
+        background: #ffd7a0;
+        padding: .4rem 1rem;
+        font-size: 14px;
+        margin: .5rem 0;
+    }
+  }
+}

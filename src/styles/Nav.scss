@@ -1,0 +1,111 @@
+@import "./presets";
+
+.Nav {
+  @include flex(row, center, space-between);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0 10px #bbb;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 4;
+  div:nth-child(1) {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    width: 40px;
+  }
+  .NavLinks {
+    @include flex(row, center, space-between);
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 1rem;
+      transition: 0.3s linear;
+      &:hover {
+        color: #555;
+        &:after {
+          width: 100%;
+          background: #999;
+        }
+      }
+      &.active {
+        color: #000;
+        font-weight: 500;
+      }
+      &:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0%;
+        background: transparent;
+        transition: 0.3s linear;
+      }
+      &.active:after {
+        width: 100% !important;
+        background: #999;
+      }
+    }
+  }
+  .BuyBtn {
+    @include flex(row, center, center);
+    a {
+      text-decoration: none;
+      color: #fff;
+      background: #9a28df;
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      transition: 0.3s linear;
+      &:hover {
+        background: #b146f3;
+      }
+    }
+    .Bar {
+      font-size: 20px;
+      margin: 0 0.6rem;
+    }
+  }
+  .AbsoluteBar {
+    display: none;
+    .active {
+      background: #555;
+      color: #fff;
+    }
+  }
+  .Bar { display: none; }
+  @include media(540px) {
+    .Bar { display: block; }
+    .NavLinks {
+      display: none;
+    }
+    .BuyBtn {
+      display: none;
+    }
+    .AbsoluteBar {
+      @include flex(column, flex-start, center);
+      position: absolute;
+      top: 0px;
+      background: #eee;
+      width: 100%;
+      left: 0;
+      transform: translate(0, 50%);
+      height: 0;
+      overflow: hidden;
+      transition: .3s linear !important;
+      opacity: 0;
+      a {
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        color: #444;
+        width: 100%;
+      }
+    }
+    .AbsoluteBarShown {
+        height: auto;
+        opacity: 1;
+    }
+  }
+}

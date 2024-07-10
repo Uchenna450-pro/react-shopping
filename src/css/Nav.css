@@ -1,0 +1,125 @@
+.Nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0 10px #bbb;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 4;
+}
+.Nav div:nth-child(1) {
+  width: 40px;
+}
+.Nav div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+.Nav .NavLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.Nav .NavLinks a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 1rem;
+  transition: 0.3s linear;
+}
+.Nav .NavLinks a:hover {
+  color: #555;
+}
+.Nav .NavLinks a:hover:after {
+  width: 100%;
+  background: #999;
+}
+.Nav .NavLinks a.active {
+  color: #000;
+  font-weight: 500;
+}
+.Nav .NavLinks a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: transparent;
+  transition: 0.3s linear;
+}
+.Nav .NavLinks a.active:after {
+  width: 100% !important;
+  background: #999;
+}
+.Nav .BuyBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Nav .BuyBtn a {
+  text-decoration: none;
+  color: #fff;
+  background: #9a28df;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  transition: 0.3s linear;
+}
+.Nav .BuyBtn a:hover {
+  background: #b146f3;
+}
+.Nav .BuyBtn .Bar {
+  font-size: 20px;
+  margin: 0 0.6rem;
+}
+.Nav .AbsoluteBar {
+  display: none;
+}
+.Nav .AbsoluteBar .active {
+  background: #555;
+  color: #fff;
+}
+.Nav .Bar {
+  display: none;
+}
+@media screen and (max-width: 540px) {
+  .Nav .Bar {
+    display: block;
+  }
+  .Nav .NavLinks {
+    display: none;
+  }
+  .Nav .BuyBtn {
+    display: none;
+  }
+  .Nav .AbsoluteBar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    background: #eee;
+    width: 100%;
+    left: 0;
+    transform: translate(0, 50%);
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s linear !important;
+    opacity: 0;
+  }
+  .Nav .AbsoluteBar a {
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    color: #444;
+    width: 100%;
+  }
+  .Nav .AbsoluteBarShown {
+    height: auto;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Nav.css.map */

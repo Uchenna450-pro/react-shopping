@@ -1,0 +1,12 @@
+@mixin flex($dir, $al, $jc) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $al;
+    justify-content: $jc;
+}
+
+@mixin media($px) {
+    @media screen and (max-width: $px) {
+        @content;
+    }
+}

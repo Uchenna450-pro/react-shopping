@@ -1,0 +1,145 @@
+@import "./presets";
+
+.CheckOut {
+  .Hero {
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+  }
+  main {
+    .title {
+      font-size: 14px;
+      color: #555;
+    }
+    .flex-header {
+      @include flex(row, center, space-between);
+      h2 {
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .flex-btn {
+        @include flex(row, center, space-between);
+        color: #555;
+        a {
+          text-decoration: none;
+          color: #555;
+        }
+        & > a,
+        & > div {
+          background: #eee;
+          padding: 0.5rem;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        .cart span {
+          background-color: #ff3b30;
+          color: #fff;
+          padding: 0.001rem 0.2rem;
+          border-radius: 50%;
+          position: absolute;
+          font-size: 11px;
+          transform: translate(-60%, -20%);
+        }
+      }
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px 40px;
+      .input-field {
+        margin: 0.5rem 0;
+        .input-label {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        input {
+          border: 1px solid #ddd;
+          border-radius: 3px;
+          height: 34px;
+          width: 100%;
+          font-family: "Poppins", verdana;
+          outline: 0;
+          background: #dfdede;
+          padding: 0.5rem;
+        }
+        select {
+          border: 1px solid #ccc;
+          font-family: "Poppins", verdana;
+          background: #dfdede;
+          width: 100%;
+          color: #555;
+          outline: 0;
+          padding: 0.4rem;
+        }
+        textarea {
+          width: 100%;
+          height: 150px;
+          border: 1px solid #ccc;
+          color: #555;
+          background: #dfdede;
+          font-family: "Poppins", verdana;
+          outline: 0;
+          padding: 0.4rem;
+        }
+      }
+      .input-field:last-child {
+        grid-column: span 2;
+        width: 100%;
+        resize: vertical;
+      }
+      @include media(500px) {
+        @include flex(column, center, center);
+        .input-field {
+          width: 100%;
+        }
+      }
+    }
+    .line {
+      height: 2px;
+      background: #bbb;
+      width: calc(100% - 5rem);
+      border-radius: 25px;
+      margin-top: 0.5rem;
+    }
+    .CartTotal {
+      width: 350px;
+      background: #fff;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      margin: 2rem auto;
+      & > h2 {
+        font-weight: 500;
+        text-align: center;
+      }
+      .flex-display {
+        @include flex(row, center, space-between);
+      }
+      .line {
+        width: 100%;
+        transform: translate(0);
+        margin: 1rem 0;
+      }
+      .large-btn {
+        border: 0;
+        outline: 0;
+        width: 100%;
+        background: #9a28df;
+        color: #fff;
+        padding: 0.7rem;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        border-radius: 7px;
+        transition: 0.3s linear;
+        &:hover {
+          background: #ae53e7;
+        }
+      }
+      @include media(370px) {
+        width: 100%;
+      }
+    }
+  }
+}

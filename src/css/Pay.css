@@ -1,0 +1,60 @@
+.CheckOutPay main {
+  margin-top: 1rem;
+}
+.CheckOutPay main .line {
+  height: 2px;
+  background: #bbb;
+  width: calc(100% - 5rem);
+  border-radius: 25px;
+  margin-top: 0.5rem;
+}
+.CheckOutPay main .CartTotal {
+  width: 400px;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+}
+.CheckOutPay main .CartTotal > h2 {
+  font-weight: 500;
+  text-align: center;
+}
+.CheckOutPay main .CartTotal .flex-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.CheckOutPay main .CartTotal .line {
+  width: 100%;
+  transform: translate(0);
+  margin: 1rem 0;
+}
+.CheckOutPay main .CartTotal .large-btn {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background: #9a28df;
+  color: #fff;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border-radius: 7px;
+  transition: 0.3s linear;
+}
+.CheckOutPay main .CartTotal .large-btn:hover {
+  background: #ae53e7;
+}
+@media screen and (max-width: 450px) {
+  .CheckOutPay main .CartTotal {
+    width: 100%;
+  }
+}
+.CheckOutPay main .validate-warn {
+  color: #FF9500;
+  background: #ffd7a0;
+  padding: 0.4rem 1rem;
+  font-size: 14px;
+  margin: 0.5rem 0;
+}/*# sourceMappingURL=Pay.css.map */

@@ -1,0 +1,179 @@
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+.Hero h1 {
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.Hero .search-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.Hero .search-flex .search-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  padding: 0.5rem 0.8rem;
+}
+.Hero .search-flex .search-field input {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  margin: 0 0.3rem;
+  width: 200px;
+}
+.Hero .search-flex button {
+  border: 0;
+  outline: 0;
+  background: #9a28df;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 0.8rem;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0 0.3rem;
+  transition: 0.3s linear;
+}
+.Hero .search-flex button:hover {
+  background: #ae53e7;
+}
+.Hero .HeroImg {
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+.Hero .HeroImg img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 425px) {
+  .Hero {
+    padding: 2rem;
+  }
+  .Hero h1 {
+    font-size: 20px;
+  }
+  .Hero p {
+    font-size: 15px;
+  }
+  .Hero .search-flex .search-field input {
+    width: 150px;
+  }
+}
+
+main {
+  padding: 3rem;
+  background: #eee;
+}
+main > h2 {
+  font-weight: 400;
+  color: #555;
+}
+main > h1 {
+  color: #333;
+  text-align: center;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+main .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main .grid .ProductItem {
+  width: 90%;
+  border: 1px solid #bbb;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+main .grid .ProductItem .product-image {
+  width: 100%;
+}
+main .grid .ProductItem .product-image img {
+  height: 100%;
+  width: 100%;
+}
+main .grid .ProductItem .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: rgba(247, 220, 220, 0.5607843137);
+  padding: 1rem;
+}
+main .grid .ProductItem .description h3 {
+  text-align: center;
+  align-self: center;
+}
+main .grid .ProductItem .description p {
+  font-size: 13px;
+}
+main .grid .ProductItem .description p:nth-child(3) {
+  font-weight: 500;
+}
+main .grid .ProductItem .description button {
+  border: 0;
+  outline: 0;
+  background: #9a28df;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 0.8rem;
+  border-radius: 7px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: 0.3s linear;
+}
+main .grid .ProductItem .description button:hover {
+  background: #ae53e7;
+}
+@media screen and (max-width: 860px) {
+  main .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  main {
+    padding: 2rem;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+  main h1 {
+    font-size: 25px;
+  }
+}
+main > button {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background: #9a28df;
+  color: #FFF;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border-radius: 7px;
+  transition: 0.3s linear;
+}
+main > button:hover {
+  background: #ae53e7;
+}/*# sourceMappingURL=Home.css.map */
